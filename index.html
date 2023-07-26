@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Burst</title>
+    <!-- tailwind and daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/d7b7563d24.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "color-red": "#F85559",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+        .lato-font{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+  </head>
+  <body class="lato-font">
+    <header>
+      <!-- nav bar starts -->
+      <div
+        class="navbar container bg-color-red text-white rounded-full mx-auto mt-6 py-5"
+      >
+        <div class="navbar-start font-lg">
+          <div class="navbar-start w-full hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="navbar-center ml-20 flex lg:flex-row align-middle">
+            <img class="w-8 align-middle" src="images/logo.png" alt="" />
+            <a class="font-bold text-4xl">Fruit Burst</a>
+          </div>
+        </div>
+
+        <div class="navbar-end ">
+            <div class="relative mr-7 bg-white rounded-full shadow-md w-70 p-3">
+                <input type="text" class="w-full pr-10 outline-none placeholder-gray-400" placeholder="Search here" />
+                <i class="absolute right-3 p-2 text-gray-400 fas fa-search"></i> 
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- navbar ends -->
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
